@@ -1,0 +1,18 @@
+// prisma/schema.prisma
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Booking {
+  id        Int      @id @default(autoincrement())
+  date      DateTime
+  timeSlot  String
+
+  @@unique([date, timeSlot]) // Composite unique key for bookings
+}
