@@ -5,8 +5,7 @@
 To run this application, you need to set up the `.env` file with the required environment variables.
 
 1. **Create the `.env` File**:
-2. Set Up the Database URL: Open the .env file and add your database connection string in the following format but replace the password and database with yours :
-DATABASE_URL="postgresql://postgres:246810@localhost:5432/booking_db?schema=public"
+2. Set Up the Database URL: Open the .env file and add your database connection string in the following format but replace the password and database-name with yours :
 DATABASE_URL="postgresql://postgres:password@localhost:5432/database-name?schema=public"
 
 Database Setup
